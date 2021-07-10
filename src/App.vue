@@ -54,7 +54,7 @@
               Date of Birth
             </label>
             <div class="relative">
-              <input id="date" @input="calcAge($event.target.value)" :max="today" v-model="user.dateBirth" class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="date" placeholder="962">
+              <input id="date" @input="calcAge($event.target.value)" :max="today" v-model="user.dateBirth" class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="date" placeholder="YYYY/MM/DD">
               <small v-if="user.dateBirth"> Happy <span class="text-green-500">{{formattedDate}}</span> old 🥳</small>
             </div>
           </div>
